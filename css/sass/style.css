@@ -1,0 +1,73 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+body {
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+}
+
+
+
+body {
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-name: fontfix;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fontfix {
+    from { opacity: 1; }
+    to   { opacity: 1; }
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+.heading{
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+}
+
+.shadows{
+  text-shadow: 0.09em 0.09em 0.09em #000000 ;
+  font-size:  17px !important;
+}
+
+.card{
+  border:2px solid orange !important;
+}
+
+#info{
+  padding-bottom: 5rem;
+  z-index: 999;
+}
+
+.card:hover{
+  background-color: aliceblue;
+}
+
+.link{
+  text-emphasis-color: orange;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.bg-img{
+ background-image: linear-gradient(to right, rgb(240, 195, 195),rgb(178, 178, 232));
+ padding:7rem 0 7rem 0;
+}
+
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
