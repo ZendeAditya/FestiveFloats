@@ -71,3 +71,22 @@ html{
   width: 100%;
   /* The width is the width of the web page */
 }
+
+.bg-pink{
+  background-color:rgb(251, 204, 212) !important;
+  color:black;
+}
+
+a:link{
+  color:black;
+}
+
+a:visited{
+  color:rgb(42, 41, 41);
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
