@@ -98,19 +98,22 @@
                 <!-- Dropdown menu -->
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-items bg-pink" href="#wedding">Wedding</a>
+                    <a class="dropdown-item bg-pink" href="#wedding">Wedding</a>
                   </li>
                   <li>
-                    <a class="dropdown-items" href="#birthday">Birthday</a>
+                    <a class="dropdown-item" href="#birthday">Birthday</a>
                   </li>
                   <li>
-                    <a class="dropdown-items bg-pink" href="#shower"> Baby shower</a>
+                    <a class="dropdown-item bg-pink" href="#shower"> Baby shower</a>
                   </li>
                   <li>
-                    <a class="dropdown-items" href="#carporate">Carporate</a>
+                    <a class="dropdown-item" href="#carporate">Carporate</a>
                   </li>
                   <li>
-                    <a class="dropdown-items bg-pink" href="#gender">Gender Reveal</a>
+                    <a class="dropdown-item bg-pink" href="#gender">Gender Reveal</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#Props">Props</a>
                   </li>
                 </ul>
               </li>
@@ -189,7 +192,7 @@
     </div>
       <!-- info area end -->
       <!-- about us start -->
-      <section class="contianer" id="about"  style="background-color:pink; padding:7rem 0 7rem 0;" >
+      <section class="container-fluid" id="about"  style="background-color:pink; padding:7rem 0 7rem 0;" >
         <div class="container">
           <div class="row">
             <div class="col-md-10 col-sm-12 mx-auto">
@@ -233,7 +236,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="owl-one owl-carousel owl-theme">
+            <div class="owlGallery owl-carousel owl-theme">
               <div class="items">
                 <a href="images/pic/picture_1.jpg" data-lightbox="image-1" >
                   <img src="images/pic/picture_1.jpg" alt="" class="img-fluid my-2">
@@ -387,7 +390,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-sm-12">
-              <div  class="owl-one owl-carousel owl-theme">
+              <div  class="owlWedding owl-carousel owl-theme">
                 <div class="items">
                   <a href="images/events/wedding_4.jpg" data-lightbox="image-1" >
                     <img src="images/events/wedding_4.jpg" alt="" class="img-fluid my-2">
@@ -491,7 +494,7 @@
               </div>
             </div>
             <div class="col-md-6 col-sm-6 mx-auto">
-              <div  class="owl-one owl-carousel owl-theme">
+              <div  class="owlBirthday owl-carousel owl-theme">
                 <div class="items">
                   <a href="images/birthday/birthday_1.jpg" data-lightbox="image-1" >
                     <img src="images/birthday/birthday_1.jpg" alt="" class="img-fluid my-2">
@@ -571,7 +574,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-sm-12">
-              <div  class="owl-one owl-carousel owl-theme">
+              <div  class="owlShower owl-carousel owl-theme">
                 <div class="items">
                   <a href="images/img/img_11.jpg" data-lightbox="image-1" >
                     <img src="images/img/img_11.jpg" alt="" class="img-fluid my-2">
@@ -675,7 +678,7 @@
               </div>
             </div>
             <div class="col-md-6 col-sm-12">
-              <div  class="owl-one owl-carousel owl-theme">
+              <div  class="owlCorporate owl-carousel owl-theme">
                 <div class="items">
                   <a href="images/events/carporate_2.jpg" data-lightbox="image-1" >
                     <img src="images/events/carporate_2.jpg" alt="" class="img-fluid my-2">
@@ -755,7 +758,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-sm-4  mx-auto">
-              <div  class="owl-one owl-carousel owl-theme">
+              <div  class="owlGender owl-carousel owl-theme">
                 <div class="items">
                   <a href="images/events/Christening_2.jpg" data-lightbox="image-1" >
                     <img src="images/events/Christening_2.jpg" alt="" class="img-fluid my-2">
@@ -836,7 +839,7 @@
             <div class="col-md-6 col-sm-12">
               <div class="container">
                 <div class="row">
-                  <div  class="owl-one owl-carousel owl-theme">
+                  <div  class="owlBackdrops owl-carousel owl-theme">
                     <div class="items">
                       <a href="images/Backdrops/img_1.jpg" data-lightbox="image-1" >
                         <img src="images/Backdrops/img_1.jpg" alt="" class="img-fluid my-2">
@@ -908,7 +911,7 @@
       </section>
       <!-- Backdrops end  --> 
       <!-- props start  -->
-      <section id="props" class="my-5">
+      <section id="Props" class="my-5">
         <div class="container">
           <div class="row">
             <h1 class="text-center heading">Hire Our Props</h1>
@@ -920,7 +923,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div  class="owl-one owl-carousel owl-theme">
+            <div  class="owlProps owl-carousel owl-theme">
               <div class="items">
                 <a href="images/props/prop_1.jpg" data-lightbox="image-1" data-title="My caption">
                   <img src="images/props/prop_1.jpg" alt="">
@@ -1331,13 +1334,14 @@
     <script>
       AOS.init();
     </script>
+    <!-- owl carousel for wedding section  -->
     <script>
-      $('.owl-one').owlCarousel({
+      $('.owlWedding').owlCarousel({
           loop:true,
           margin:10,
           nav:true,
           dots: false,
-          navText: ["<div class='btn'> <i class='fa-solid fa-arrow-left-long'></i> </div>", "<div class='btn'> <i class='fa-solid fa-arrow-right-long'></i> </div>"],
+          navText: ["<div class='btn bg-pink'> <i class='fa-solid fa-arrow-left-long'></i> </div>", "<div class='btn bg-pink'> <i class='fa-solid fa-arrow-right-long'></i> </div>"],
           responsive:{
               0:{
                   itemss:1
@@ -1351,26 +1355,174 @@
           }
       })
     </script>
-       <script>
-        $(".owlTestimonials").owlCarousel({
-          loop: true,
-          margin: 10,
+    <!-- owl carousel for birthday section -->
+    <script>
+      $('.owlBirthday').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:true,
           dots: false,
-          nav: true,
-          navText: ["<div class='btn'> <i class='fa-solid fa-arrow-left-long'></i> </div>", "<div class='btn'> <i class='fa-solid fa-arrow-right-long'></i> </div>"],
-          responsive: {
-            0: {
-              items: 1,
-            },
-            600: {
-              items: 3,
-            },
-            1000: {
-              items: 1,
-            },
-          },
-        });
-      </script>
+          navText: ["<div class='btn bg-white'> <i class='fa-solid fa-arrow-left-long'></i> </div>", "<div class='btn bg-white'> <i class='fa-solid fa-arrow-right-long'></i> </div>"],
+          responsive:{
+              0:{
+                  itemss:1
+              },
+              600:{
+                  itemss:3
+              },
+              1000:{
+                  itemss:5
+              }
+          }
+      })
+    </script>
+    <!-- owl carousel for owlShower section -->
+    <script>
+      $('.owlShower').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:true,
+          dots: false,
+          navText: ["<div class='btn bg-pink'> <i class='fa-solid fa-arrow-left-long'></i> </div>", "<div class='btn bg-pink'> <i class='fa-solid fa-arrow-right-long'></i> </div>"],
+          responsive:{
+              0:{
+                  itemss:1
+              },
+              600:{
+                  itemss:3
+              },
+              1000:{
+                  itemss:5
+              }
+          }
+      })
+    </script>
+    <!-- owl carousel for owlCorporate section -->
+    <script>
+      $('.owlCorporate').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:true,
+          dots: false,
+          navText: ["<div class='btn bg-white'> <i class='fa-solid fa-arrow-left-long'></i> </div>", "<div class='btn bg-white'> <i class='fa-solid fa-arrow-right-long'></i> </div>"],
+          responsive:{
+              0:{
+                  itemss:1
+              },
+              600:{
+                  itemss:3
+              },
+              1000:{
+                  itemss:5
+              }
+          }
+      })
+    </script>
+    <!-- owl carousel for owlGender section -->
+    <script>
+      $('.owlGender').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:true,
+          dots: false,
+          navText: ["<div class='btn bg-pink'> <i class='fa-solid fa-arrow-left-long'></i> </div>", "<div class='btn bg-pink'> <i class='fa-solid fa-arrow-right-long'></i> </div>"],
+          responsive:{
+              0:{
+                  itemss:1
+              },
+              600:{
+                  itemss:3
+              },
+              1000:{
+                  itemss:5
+              }
+          }
+      })
+    </script>
+    <!-- owl carousel for owlBackdrops section -->
+    <script>
+      $('.owlBackdrops').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:true,
+          dots: false,
+          navText: ["<div class='btn bg-white'> <i class='fa-solid fa-arrow-left-long'></i> </div>", "<div class='btn bg-white'> <i class='fa-solid fa-arrow-right-long'></i> </div>"],
+          responsive:{
+              0:{
+                  itemss:1
+              },
+              600:{
+                  itemss:3
+              },
+              1000:{
+                  itemss:5
+              }
+          }
+      })
+    </script>
+    <!-- owl carousel for owlBackdrops section -->
+    <script>
+      $('.owlProps').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:true,
+          dots: false,
+          navText: ["<div class='btn bg-pink'> <i class='fa-solid fa-arrow-left-long'></i> </div>", "<div class='btn bg-pink'> <i class='fa-solid fa-arrow-right-long'></i> </div>"],
+          responsive:{
+              0:{
+                  itemss:1
+              },
+              600:{
+                  itemss:3
+              },
+              1000:{
+                  itemss:5
+              }
+          }
+      })
+    </script>
+    <!-- owl carousel for owlBackdrops section -->
+    <script>
+      $('.owlGallery').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:true,
+          dots: false,
+          navText: ["<div class='btn bg-pink'> <i class='fa-solid fa-arrow-left-long'></i> </div>", "<div class='btn bg-pink'> <i class='fa-solid fa-arrow-right-long'></i> </div>"],
+          responsive:{
+              0:{
+                  itemss:1
+              },
+              600:{
+                  itemss:3
+              },
+              1000:{
+                  itemss:5
+              }
+          }
+      })
+    </script>
+    <!-- owl carousel for testimonial  section -->
+    <script>
+    $(".owlTestimonials").owlCarousel({
+      loop: true,
+      margin: 10,
+      dots: false,
+      nav: true,
+      navText: ["<div class='btn bg-pink'> <i class='fa-solid fa-arrow-left-long'></i> </div>", "<div class='btn bg-pink'> <i class='fa-solid fa-arrow-right-long'></i> </div>"],
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 3,
+        },
+        1000: {
+          items: 1,
+        },
+      },
+    });
+    </script>
       
   </body>
 </html>
